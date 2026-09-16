@@ -218,7 +218,7 @@ end
 BringEnemy = function(Mon)
     if not _B then return end
     if not Mon then 
-        -- Tự động tìm mob nếu không có Mon
+        -- Tư động động tìm mob nếu không có Mon
         local hrp = plr.Character and plr.Character:FindFirstChild("HumanoidRootPart")
         if not hrp then return end
         
@@ -2054,7 +2054,7 @@ end)
 Tabs.Main:AddSection("Cày")
 
 FarmLevel = Tabs.Main:AddToggle({
-    Name = "Tự động cày cấp",
+    Name = "Tư động động cày cấp",
     Description = "",
     Default = false,
     Callback = function(Value)
@@ -2217,7 +2217,7 @@ task.spawn(function()
 end)
 
 ClosetMons = Tabs.Main:AddToggle({
-Name = "Tự động đánh quái gần nhất", 
+Name = "Tư động động đánh quái gần nhất", 
 Description = "", 
 Default = false, 
 Callback = function(Value)
@@ -2239,7 +2239,7 @@ spawn(function()
   end
 end)
 FactoryRaids = Tabs.Main:AddToggle({
-Name = "Tự raid nhà máy", 
+Name = "Tư động raid nhà máy", 
 Description = "", 
 Default = false,
 Callback = function(Value)
@@ -2264,7 +2264,7 @@ spawn(function()
 end)
 
 CastleRaids = Tabs.Main:AddToggle({
-Name = "Tự động đánh hải tặc", 
+Name = "Tư động động đánh hải tặc", 
 Description = "", 
 Default = false,
 Callback = function(Value)
@@ -2304,7 +2304,7 @@ end)
 
 
 Ecto = Tabs.Main:AddToggle({
-Name = "Tự động cày Ectoplasm", 
+Name = "Tư động động cày Ectoplasm", 
 Description = "", 
 Default = false,
 Callback = function(Value)
@@ -2329,7 +2329,7 @@ end)
 Tabs.Main:AddSection("Rương")
 
 ChestTW = Tabs.Main:AddToggle({
-Name = "Tự nhặt rương", 
+Name = "Tư động nhặt rương", 
 Description = "", 
 Default = false,
 Callback = function(Value)
@@ -2462,7 +2462,7 @@ end)
 Tabs.Main:AddSection("Thu thập Berry")
 
 Berry = Tabs.Main:AddToggle({
-Name = "Tự nhặt Berry", 
+Name = "Tư động nhặt Berry", 
 Description = "", 
 Default = false,
 Callback = function(Value)
@@ -2500,7 +2500,7 @@ end)
 
 
 BerryH = Tabs.Main:AddToggle({
-Name = "Tự nhặt Berry + Chuyển đổi máy chủ", 
+Name = "Tư động nhặt Berry + Chuyển đổi máy chủ", 
 Description = "", 
 Default = false,
 Callback = function(Value)
@@ -2615,7 +2615,7 @@ if World3 then
     })
 end
 Tabs.Main:AddToggle({
-    Name = "Tự giết quái",
+    Name = "Tư động giết quái",
     Default = false,
     Callback = function(Value)
         _G.AutoKillMob = Value
@@ -2924,7 +2924,7 @@ elseif World3 then
     IslandData = Sea3_Islands
 end
 Tabs.Main:AddToggle({
-    Name = "Tự farm tất cả đảo",
+    Name = "Tư động farm tất cả đảo",
     Default = false,
     Callback = function(Value)
         _G.AutoFarmIsland = Value
@@ -3004,7 +3004,7 @@ spawn(function()
 end)
 
 EliteQ = Tabs.Main:AddToggle({
-    Name = "Tự động đánh Elite",
+    Name = "Tư động động đánh Elite",
     Description = "",
     Default = false,
     Callback = function(Value)
@@ -3074,7 +3074,7 @@ spawn(function()
 end)
 
 EliteH = Tabs.Main:AddToggle({
-	Name = "Tự động đánh Elite + Chuyển đổi máy chủ",
+	Name = "Tư động động đánh Elite + Chuyển đổi máy chủ",
 	Description = "",
 	Default = false,
 	Callback = function(Value)
@@ -3180,7 +3180,7 @@ end)
 Tabs.Main:AddSection("Rip Indra")
 
 Tabs.Main:AddToggle({
-Name = "Tự động đánh Rip Indra", 
+Name = "Tư động động đánh Rip Indra", 
 Description = "", 
 Default = false,
 Callback = function(Value)
@@ -3203,7 +3203,7 @@ spawn(function()
 end)
 
 Tabs.Main:AddToggle({
-Name = "Tự mở khóa màu haki", 
+Name = "Tư động mở khóa màu haki", 
 Description = "", 
 Default = false,
 Callback = function(Value)
@@ -3255,7 +3255,7 @@ spawn(function()
 end)
 
 Cake = Tabs.Main:AddToggle({
-    Name = "Tự động cày Công tử bột",
+    Name = "Tư động động cày Công tử bột",
     Description = "",
     Default = false,
     Callback = function(Value)
@@ -3336,7 +3336,7 @@ end
 
 
 CakeSM = Tabs.Main:AddToggle({
-    Name = "Tự động triệu hồi Công tử bột",
+    Name = "Tư động động triệu hồi Công tử bột",
     Description = "",
     Default = false,
     Callback = function(Value)
@@ -3362,7 +3362,7 @@ end)
 
 
 Tabs.Main:AddToggle({
-    Name = "Tự động đánh Bột đế vương (Full)",
+    Name = "Tư động động đánh Bột đế vương (Full)",
     Default = false,
     Callback = function(Value)
         _G.AutoDoughKing = Value
@@ -3429,7 +3429,7 @@ spawn(function()
     end
 end)
 Tabs.Main:AddToggle({
-    Name = "Tự động đánh Bột đế vương",
+    Name = "Tư động động đánh Bột đế vương",
     Default = false,
     Callback = function(Value)
         _G.AutoAttackDoughKing = Value
@@ -3454,7 +3454,7 @@ spawn(function()
 end)
 
 Tabs.Main:AddToggle({
-    Name = "Tự động đánh Bột đế vương + Chuyển đổi máy chủ",
+    Name = "Tư động động đánh Bột đế vương + Chuyển đổi máy chủ",
     Default = false,
     Callback = function(Value)
         _G.AutoHop_Dough = Value
@@ -3524,7 +3524,7 @@ spawn(function()
 end)
 
 Tabs.Main:AddToggle({
-    Name = "Tự động cày xương",
+    Name = "Tư động động cày xương",
     Description = "",
     Default = false,
     Callback = function(Value)
@@ -3607,7 +3607,7 @@ end
 
 
 Tabs.Main:AddToggle({
-Name = "Tự động đánh sứ giả linh hồn", 
+Name = "Tư động động đánh sứ giả linh hồn", 
 Description = "", 
 Default = false,
 Callback = function(Value)
@@ -3633,7 +3633,7 @@ spawn(function()
   end
 end)
 RanBone = Tabs.Main:AddToggle({
-Name = "Tự động trao đổi xương", 
+Name = "Tư động động trao đổi xương", 
 Description = "", 
 Default = false,
 Callback = function(Value)
@@ -4343,7 +4343,7 @@ Tabs.Settings:AddToggle({
     end
 })
 BusuAura = Tabs.Settings:AddToggle({
-Name = "Tự bật Buso", 
+Name = "Tự động bật Buso", 
 Description = "", 
 Default = true,
 Callback = function(Value)
@@ -4385,7 +4385,7 @@ task.defer(function()
   print("[nyann os] Auto ON: Fast Attack / Bring / Buso / Spin XYZ / Stop Items / Anti AFK")
 end)
 Tabs.Settings:AddToggle({
-    Name = "Auto Haki Observation",
+    Name = "Tự động bắt haki quan sát",
     Default = false,
     Callback = function(Value)
         getgenv().Observation = Value
@@ -7473,7 +7473,7 @@ spawn(function()
     end)
 end)
 PullLv = Tabs.Race:AddToggle({
-Name = "Auto Pull Lever", 
+Name = "Tự động gạt cần", 
 Description = "", 
 Default = false,
 Callback = function(Value)
@@ -7709,7 +7709,7 @@ spawn(function()
   end
 end)
 AutoKill = Tabs.Race:AddToggle({
-Name = "Auto Kill Player After Trial", 
+Name = "Tự động đánh người chơi trong Trial", 
 Description = "", 
 Default = false,
 Callback = function(Value)
@@ -8005,7 +8005,7 @@ spawn(function()
   end
 end)
 Toggle = Tabs.Prehistoric:AddToggle({
-Name = "Auto Relic Drago Trial [Beta]", 
+Name = "Thử nghiệm Drago Relic tự động", 
 Description = "", 
 Default = false,
 Callback = function(Value)
@@ -8224,7 +8224,7 @@ end)
 
 
 Tabs.Prehistoric:AddToggle({
-    Name = "Auto Find Prehistoric Island",
+    Name = "Tự động bay đến đảo tiền sử",
     Description = "",
     Default = false,
     Callback = function(Value)
@@ -8313,7 +8313,7 @@ spawn(function()
 end)
 
 Tabs.Prehistoric:AddToggle({
-    Name = "Auto Start Prehistoric Event",
+    Name = "Tự động bắt đầu sự kiện đảo núi lửa",
     Default = false,
     Callback = function(Value)
         _G.AutoStartPrehistoric = Value
@@ -8347,7 +8347,7 @@ end)
 
 
 Tabs.Prehistoric:AddToggle({
-    Name = "Auto Patch Prehistoric Event",
+    Name = "Tự động vá lỗ",
     Description = "",
     Default = false,
     Callback = function(Value)
@@ -8522,7 +8522,7 @@ spawn(function()
   end
 end)
 Toggle = Tabs.Prehistoric:AddToggle({
-Name = "Auto Reset When Complete Volcano", 
+Name = "Tự động thiết lập lại khi hoàn thành quá trình phun trào núi lửa.", 
 Description = "", 
 Default = false,
 Callback = function(Value)
@@ -8592,7 +8592,7 @@ Tabs.SeaEvent:AddSlider({
     end
 })
 Tabs.SeaEvent:AddToggle({
-    Name = "Auto Press W",
+    Name = "Tự động bấm phím W",
     Default = false,
     Callback = function(Value)
         getgenv().AutoPressW = Value
@@ -8763,7 +8763,7 @@ Callback = function(Value)
   _G.DangerSc = Value
 end})
 Q = Tabs.SeaEvent:AddToggle({
-Name = "Auto Sail Boat", 
+Name = "Tự động lái thuyền", 
 Description = "", 
 Default = false,
 Callback = function(Value)
@@ -8809,7 +8809,7 @@ spawn(function()while wait(Sec)do pcall(function()for a,b in pairs(workspace.Boa
 Tabs.SeaEvent:AddSection("Thực thể sự kiện biển")
 
 Tabs.SeaEvent:AddToggle({
-Name = "Tự Shark", 
+Name = "Tự động đánh Shark", 
 Description = "", 
 Default = false,
 Callback = function(Value)
@@ -8817,7 +8817,7 @@ Callback = function(Value)
 end})
 
 Tabs.SeaEvent:AddToggle({
-Name = "Tự Piranha", 
+Name = "Tự động đánh Piranha", 
 Description = "", 
 Default = false,
 Callback = function(Value)
@@ -8825,7 +8825,7 @@ Callback = function(Value)
 end})
 
 Tabs.SeaEvent:AddToggle({
-Name = "Tự Terror Shark", 
+Name = "Tự động đánh Terror Shark", 
 Description = "", 
 Default = false,
 Callback = function(Value)
@@ -8833,7 +8833,7 @@ Callback = function(Value)
 end})
 
 Tabs.SeaEvent:AddToggle({
-Name = "Auto Fish Crew Member", 
+Name = "Tự động đánh Fish Crew Member", 
 Description = "", 
 Default = false,
 Callback = function(Value)
@@ -8841,7 +8841,7 @@ Callback = function(Value)
 end})
 
 Tabs.SeaEvent:AddToggle({
-Name = "Auto Haunted Crew Member", 
+Name = "Tự động đánh Haunted Crew Member", 
 Description = "", 
 Default = false,
 Callback = function(Value)
@@ -8849,7 +8849,7 @@ Callback = function(Value)
 end})
 
 Tabs.SeaEvent:AddToggle({
-Name = "Tự đánh Pirate Grand Brigade", 
+Name = "Tự động đánh Pirate Grand Brigade", 
 Description = "", 
 Default = false,
 Callback = function(Value)
@@ -8857,7 +8857,7 @@ Callback = function(Value)
 end})
 
 Tabs.SeaEvent:AddToggle({
-Name = "Tự đánh thuyền cá", 
+Name = "Tự động đánh thuyền cá", 
 Description = "", 
 Default = false,
 Callback = function(Value)
@@ -8865,7 +8865,7 @@ Callback = function(Value)
 end})
 
 Tabs.SeaEvent:AddToggle({
-Name = "Tự đánh Sea Beast", 
+Name = "Tự động đánh Sea Beast", 
 Description = "", 
 Default = false,
 Callback = function(Value)
@@ -8901,7 +8901,7 @@ spawn(function()
 end)
 
 Tabs.SeaEvent:AddToggle({
-Name = "Tự tìm đảo Kitsune", 
+Name = "Tự động tìm đảo Kitsune", 
 Description = "", 
 Default = false,
 Callback = function(Value)
@@ -9010,14 +9010,14 @@ spawn(function()
 end)
 
 Tabs.SeaEvent:AddButton({
-Name = "Trade Items Azure", 
+Name = "Trao đổi vật phẩm Azure", 
 Description = "",
 Callback = function()
   replicated.Modules.Net:FindFirstChild("RF/KitsuneStatuePray"):InvokeServer()
 end})
 
 Tabs.SeaEvent:AddButton({
-Name = "Talk with kitsune statue", 
+Name = "Trò chuyện với tượng cáo Kitsune", 
 Description = "",
 Callback = function()
   replicated.Modules.Net:FindFirstChild("RE/TouchKitsuneStatue"):FireServer()
@@ -9054,7 +9054,7 @@ spawn(function()
 end)
 
 Tabs.SeaEvent:AddButton({
-    Name = "Buy Spy",
+    Name = "Mua chuột Spy",
     Callback = function()
         game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("InfoLeviathan", "2")
     end
@@ -9062,7 +9062,7 @@ Tabs.SeaEvent:AddButton({
 
 
 Tabs.SeaEvent:AddToggle({
-Name = "Auto Teleport Frozen Dimension", 
+Name = "Tự động bay đến Frozen Dimension", 
 Description = "", 
 Default = false,
 Callback = function(Value)
@@ -9114,7 +9114,7 @@ spawn(function()
 end)
 
 Tabs.SeaEvent:AddToggle({
-Name = "Tự đánh Leviathan", 
+Name = "Tự động đánh Leviathan", 
 Description = "", 
 Default = false,
 Callback = function(Value)
@@ -9122,7 +9122,7 @@ Callback = function(Value)
 end})
 
 
-Tabs.Esp:AddSection("ESP")
+Tabs.Esp:AddSection("Hiển thị")
 
 function isnil(thing)
     return (thing == nil)
@@ -9808,7 +9808,7 @@ Tabs.Esp:AddToggle({
 })
 
 Tabs.Esp:AddToggle({
-    Name = "ESP Gear",
+    Name = "ESP bánh răng",
     Description = "",
     Default = false,
     Callback = function(Value)
@@ -9858,7 +9858,7 @@ Tabs.Esp:AddToggle({
 })
 
 Tabs.Esp:AddToggle({
-    Name = "ESP Advanced Dealer",
+    Name = "ESP người bán trái huyền thoại",
     Description = "",
     Default = false,
     Callback = function(Value)
@@ -9890,7 +9890,7 @@ local function formatNumber(number)
 end
 
 local function getFruitStock()
-    local resultStr = "Advance Fruit Stock\n"
+    local resultStr = "Người bán trái cao cấp\n"
     local success, advanceFruits = pcall(function()
         return game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("GetFruits", true)
     end)
@@ -9910,7 +9910,7 @@ local function getFruitStock()
         end
     end
 
-    resultStr = resultStr .. "\nNormal Fruit Stock\n"
+    resultStr = resultStr .. "\nNgười bán trái thường\n"
     local success2, normalFruits = pcall(function()
         return game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("GetFruits")
     end)
@@ -9949,7 +9949,7 @@ end)
 
 
 RandomFF = Tabs.Raids:AddToggle({
-Name = "Tự random trái", 
+Name = "Tự động random trái", 
 Description = "", 
 Default = false,
 Callback = function(Value)
@@ -9977,7 +9977,7 @@ spawn(function()
   end
 end)
 StoredF = Tabs.Raids:AddToggle({
-Name = "Tự cất trái", 
+Name = "Tư động cất trái", 
 Description = "", 
 Default = false,
 Callback = function(Value)
@@ -10009,7 +10009,7 @@ spawn(function()
   end
 end)
 BringF = Tabs.Raids:AddToggle({
-Name = "Tự nhặt trái", 
+Name = "Tư động nhặt trái", 
 Description = "", 
 Default = false,
 Callback = function(Value)
@@ -10043,7 +10043,7 @@ Tabs.Raids:AddDropdown({
     end
 })
 Tabs.Raids:AddToggle({
-    Name = "Tự mua trái cửa hàng",
+    Name = "Tư động mua trái cửa hàng",
     Default = false,
     Callback = function(Value)
         getgenv().AutoBuyFruitSniper = Value
@@ -10070,7 +10070,7 @@ Callback = function(Value)
   _G.SelectChip = Value
 end})
 Q = Tabs.Raids:AddToggle({
-Name = "Auto Select Dungeon Chip", 
+Name = "Tự động chọn chip raid", 
 Description = "", 
 Default = false,
 Callback = function(Value)
@@ -10131,7 +10131,7 @@ end})
 
 
 AutoChipBeli = Tabs.Raids:AddToggle({
-    Name = "Tự mua chip (Beli)",
+    Name = "Tư động mua chip (Beli)",
     Description = "",
     Default = false,
     Callback = function(Value)
@@ -10153,7 +10153,7 @@ end)
 
 
 AutoChipFruit = Tabs.Raids:AddToggle({
-    Name = "Tự mua chip (trái)",
+    Name = "Tư động mua chip (trái)",
     Description = "",
     Default = false,
     Callback = function(Value)
@@ -10186,7 +10186,7 @@ end)
 
 
 StartR = Tabs.Raids:AddToggle({
-    Name = "Auto Start Raid",
+    Name = "Tự động bắt đầu đột kích",
     Description = "",
     Default = false,
     Callback = function(Value)
@@ -10234,7 +10234,7 @@ task.spawn(function()
 end)
 
 Raiding = Tabs.Raids:AddToggle({
-    Name = "Auto Raid + Next Island",
+    Name = "Tự động đột kích và bây qua các đảo trong raid",
     Description = "",
     Default = false,
     Callback = function(Value)
@@ -10313,7 +10313,7 @@ spawn(function()
 end)
 
 Tabs.Raids:AddToggle({
-Name = "Tự thức tỉnh", 
+Name = "Tư động thức tỉnh", 
 Description = "", 
 Default = false,
 Callback = function(Value)
@@ -10331,7 +10331,7 @@ spawn(function()
 end)	
 
 Tabs.Raids:AddToggle({
-    Name = "Auto Teleport To Lab",
+    Name = "Tự động bay đến Lab",
     Default = false,
     Callback = function(Value)
         _G.TpLab = Value
@@ -10352,7 +10352,7 @@ Tabs.Raids:AddToggle({
 Tabs.Raids:AddSection("Vật phẩm Law / Order")
 
 Tabs.Raids:AddButton({
-Name = "Buy Microchip Law", 
+Name = "Mua Microchip Law", 
 Description = "",
 Callback = function()
   replicated.Remotes.CommF_:InvokeServer("BlackbeardReward","Microchip","2")
@@ -10365,7 +10365,7 @@ Callback = function()
 end})
 
 Tabs.Raids:AddToggle({
-    Name = "Tự mua microchip Law", 
+    Name = "Tư động mua microchip Law", 
     Description = "",
     Default = false,
     Callback = function(Value)
@@ -10384,7 +10384,7 @@ spawn(function()
 end)
 
 Tabs.Raids:AddToggle({
-    Name = "Auto Start Law Raids", 
+    Name = "Tự động bắt đầu đánh Law", 
     Description = "",
     Default = false,
     Callback = function(Value)
@@ -10403,7 +10403,7 @@ spawn(function()
 end)
 
 Tabs.Raids:AddToggle({
-Name = "Auto Kill Law", 
+Name = "Tự động đánh Law", 
 Description = "", 
 Default = false,
 Callback = function(Value)
@@ -10432,7 +10432,7 @@ local function GetHRP()
 end
 
 Tabs.Raids:AddToggle({
-    Name = "Tự farm dungeon",
+    Name = "Tư động farm dungeon",
     Description = "",
     Default = false,
     Callback = function(Value)
@@ -10752,7 +10752,7 @@ Tabs.Combat:AddDropdown({
 })
 
 Tabs.Combat:AddToggle({
-    Name = "Aimbot Method Skills",
+    Name = "Kỹ năng phương pháp Aimbot",
     Description = "",
     Default = false,
     Callback = function(Value)
@@ -10794,7 +10794,7 @@ spawn(function()
 end)
 
 Tabs.Combat:AddToggle({
-    Name = "Aimbot Camera Closet Players",
+    Name = "Khoá cam",
     Description = "",
     Default = false,
     Callback = function(Value)
@@ -10835,7 +10835,7 @@ end)
 Tabs.Combat:AddSection("Nhiệm vụ người chơi")
 
 Tabs.Combat:AddButton({
-    Name = "Get player quests",
+    Name = "Tự động nhận nhiệm vụ người chơi",
     Description = "",
     Callback = function()
         pcall(function()
@@ -10845,7 +10845,7 @@ Tabs.Combat:AddButton({
 })
 
 Tabs.Combat:AddToggle({
-    Name = "Auto Get PlayerQuest",
+    Name = "Tự động nhận nhiệm vụ người chơi",
     Description = "",
     Default = false,
     Callback = function(Value)
@@ -10866,7 +10866,7 @@ end)
 
 
 Tabs.Combat:AddToggle({
-    Name = "Auto Kill Player Quest", 
+    Name = "Tự động đánh người chơi trong nhiệm vụ", 
     Default = false,
     Callback = function(Value)
         _G.AutoPlayerHunter = Value
@@ -10911,7 +10911,7 @@ end)
 
 
 Tabs.Combat:AddToggle({
-    Name = "Bật PvP",
+    Name = " Tự động bật PvP",
     Description = "",
     Default = false,
     Callback = function(Value)
@@ -10936,7 +10936,7 @@ spawn(function()
 end)
 
 Tabs.Combat:AddToggle({
-    Name = "Auto Safe Mode",
+    Name = "Tự động bật chế độ an toàn",
     Default = false,
     Callback = function(Value)
         _G.SafeMode = Value
@@ -11133,7 +11133,7 @@ Tabs.Combat:AddToggle({
 })
 
 Tabs.Combat:AddSlider({
-    Name = "Speed Fly Mode",
+    Name = "Tốc độ bay",
     Min = 10,
     Max = 200,
     Default = 50,
@@ -11143,7 +11143,7 @@ Tabs.Combat:AddSlider({
 })
 
 Tabs.Combat:AddToggle({
-    Name = "Dash No Cooldown",
+    Name = "Lướt không độ trễ",
     Default = false,
     Callback = function(Value)
         getgenv().DodgeNoCD = Value
@@ -11166,7 +11166,7 @@ local function NoCooldown()
 end
 
 Tabs.Combat:AddToggle({
-    Name = "Instance Mink V3 [ INF ]",
+    Name = "Vô hạn tộc thỏ V3 [ INF ]",
     Description = "",
     Default = false,
     Callback = function(Value)
@@ -11191,7 +11191,7 @@ spawn(function()
 end)
 
 Tabs.Combat:AddToggle({
-    Name = "Instance Energy [ INF ]",
+    Name = "Vô hạn năng lượng [ INF ]",
     Description = "",
     Default = false,
     Callback = function(Value)
@@ -11203,7 +11203,7 @@ Tabs.Combat:AddToggle({
 })
 
 Tabs.Combat:AddToggle({
-    Name = "Instance Soru [ INF ]",
+    Name = "Vô hạn tốc biến [ INF ]",
     Description = "",
     Default = false,
     Callback = function(Value)
@@ -11227,7 +11227,7 @@ Tabs.Combat:AddToggle({
 })
 
 Tabs.Combat:AddToggle({
-    Name = "Ignore Same Teams",
+    Name = "Bỏ qua các đội giống nhau",
     Description = "",
     Default = false,
     Callback = function(Value)
@@ -11236,7 +11236,7 @@ Tabs.Combat:AddToggle({
 })
 
 Tabs.Combat:AddToggle({
-    Name = "Accept Allies",
+    Name = "Chấp nhận đồng minh",
     Description = "",
     Default = false,
     Callback = function(Value)
@@ -11262,19 +11262,19 @@ end)
 Tabs.Travel:AddSection("Dịch chuyển - Thế giới")
 
 Tabs.Travel:AddButton({
-Name = "Travel East Blue (World 1)", 
+Name = "Đi đến biển thứ nhất", 
 Description = "",
 Callback = function()
   replicated.Remotes.CommF_:InvokeServer("TravelMain")
 end})
 Tabs.Travel:AddButton({
-Name = "Travel Dressrosa (World 2)", 
+Name = "Đi đến biển thứ hai", 
 Description = "",
 Callback = function()
   replicated.Remotes.CommF_:InvokeServer("TravelDressrosa")
 end})
 Tabs.Travel:AddButton({
-Name = "Travel Zou (World 3)", 
+Name = "Đi đến biển thứ ba", 
 Description = "",
 Callback = function()
   replicated.Remotes.CommF_:InvokeServer("TravelZou")
@@ -11292,7 +11292,7 @@ Callback = function(Value)
   _G.Island = Value
 end})
 GoIsland = Tabs.Travel:AddToggle({
-Name = "Tự dịch chuyển", 
+Name = "Tư động dịch chuyển", 
 Description = "", 
 Default = false,
 Callback = function(Value)
@@ -11390,25 +11390,25 @@ end)
 
 Tabs.Shop:AddSection("Tùy chọn cửa hàng")
 Tabs.Shop:AddButton({
-Name = "Buy Buso", 
+Name = "Mua Buso", 
 Description = "",
 Callback = function()
   replicated.Remotes.CommF_:InvokeServer("BuyHaki","Buso")
 end})
 Tabs.Shop:AddButton({
-Name = "Buy Geppo", 
+Name = "Mua Geppo", 
 Description = "",
 Callback = function()
   replicated.Remotes.CommF_:InvokeServer("BuyHaki","Geppo")
 end})
 Tabs.Shop:AddButton({
-Name = "Buy Soru", 
+Name = "Mua Soru", 
 Description = "",
 Callback = function()
   replicated.Remotes.CommF_:InvokeServer("BuyHaki","Soru")
 end})
 Tabs.Shop:AddButton({
-Name = "Buy Ken", 
+Name = "Mua Ken", 
 Description = "",
 Callback = function()
   replicated.Remotes.CommF_:InvokeServer("KenTalk","Buy")
@@ -11416,67 +11416,67 @@ end})
 
 Tabs.Shop:AddSection("Phong cách chiến đấu")
 Tabs.Shop:AddButton({
-Name = "Buy Black Leg", 
+Name = "Mua Black Leg", 
 Description = "",
 Callback = function()
   replicated.Remotes.CommF_:InvokeServer("BuyBlackLeg")
 end})
 Tabs.Shop:AddButton({
-Name = "Buy Electro", 
+Name = "Mua Electro", 
 Description = "",
 Callback = function()
   replicated.Remotes.CommF_:InvokeServer("BuyElectro")
 end})
 Tabs.Shop:AddButton({
-Name = "Buy Fishman Karate", 
+Name = "Mua Fishman Karate", 
 Description = "",
 Callback = function()
   replicated.Remotes.CommF_:InvokeServer("BuyFishmanKarate")
 end})
 Tabs.Shop:AddButton({
-Name = "Buy DragonClaw", 
+Name = "Mua DragonClaw", 
 Description = "",
 Callback = function()
   replicated.Remotes.CommF_:InvokeServer("BlackbeardReward","DragonClaw","2")
 end})
 Tabs.Shop:AddButton({
-Name = "Buy Superhuman", 
+Name = "Mua Superhuman", 
 Description = "",
 Callback = function()
   replicated.Remotes.CommF_:InvokeServer("BuySuperhuman")
 end})
 Tabs.Shop:AddButton({
-Name = "Buy Death Step", 
+Name = "Mua Death Step", 
 Description = "",
 Callback = function()
   replicated.Remotes.CommF_:InvokeServer("BuyDeathStep")
 end})
 Tabs.Shop:AddButton({
-Name = "Buy Sharkman Karate", 
+Name = "Mua Sharkman Karate", 
 Description = "",
 Callback = function()
   replicated.Remotes.CommF_:InvokeServer("BuySharkmanKarate")
 end})
 Tabs.Shop:AddButton({
-Name = "Buy ElectricClaw", 
+Name = "Mua ElectricClaw", 
 Description = "",
 Callback = function()
   replicated.Remotes.CommF_:InvokeServer("BuyElectricClaw")
 end})
 Tabs.Shop:AddButton({
-Name = "Buy DragonTalon", 
+Name = "Mua DragonTalon", 
 Description = "",
 Callback = function()
   replicated.Remotes.CommF_:InvokeServer("BuyDragonTalon")
 end})
 Tabs.Shop:AddButton({
-Name = "Buy Godhuman", 
+Name = "Mua Godhuman", 
 Description = "",
 Callback = function()
   replicated.Remotes.CommF_:InvokeServer("BuyGodhuman")
 end})
 Tabs.Shop:AddButton({
-Name = "Buy SanguineArt", 
+Name = "Mua SanguineArt", 
 Description = "",
 Callback = function()
   replicated.Remotes.CommF_:InvokeServer("BuySanguineArt")
@@ -11484,31 +11484,31 @@ end})
 
 Tabs.Shop:AddSection("Phụ kiện")
 Tabs.Shop:AddButton({
-Name = "Buy Tomoe Ring", 
+Name = "Mua Tomoe Ring", 
 Description = "",
 Callback = function()
   replicated.Remotes.CommF_:InvokeServer("BuyItem","Tomoe Ring")
 end})
 Tabs.Shop:AddButton({
-Name = "Buy Black Cape", 
+Name = "Mua Black Cape", 
 Description = "",
 Callback = function()
   replicated.Remotes.CommF_:InvokeServer("BuyItem","Black Cape")
 end})
 Tabs.Shop:AddButton({
-Name = "Buy Swordsman Hat", 
+Name = "Mua Swordsman Hat", 
 Description = "",
 Callback = function()
   replicated.Remotes.CommF_:InvokeServer("BuyItem","Swordsman Hat")
 end})
 Tabs.Shop:AddButton({
-Name = "Buy Bizarre Rifle", 
+Name = "Mua Bizarre Rifle", 
 Description = "",
 Callback = function()
   replicated.Remotes.CommF_:InvokeServer("Ectoplasm","Buy", 1)
 end})
 Tabs.Shop:AddButton({
-Name = "Buy Ghoul Mask", 
+Name = "Mua Ghoul Mask", 
 Description = "",
 Callback = function()
   replicated.Remotes.CommF_:InvokeServer("Ectoplasm","Buy", 2)
@@ -11516,81 +11516,81 @@ end})
 
 
 
-Tabs.Shop:AddSection("Vũ khí Sea 1")
+Tabs.Shop:AddSection("Vũ khí Biển thứ nhất")
 Tabs.Shop:AddButton({
-Name = "Buy Cutlass", 
+Name = "Mua Cutlass", 
 Description = "",
 Callback = function()
   replicated.Remotes.CommF_:InvokeServer("BuyItem","Cutlass")
 end})
 Tabs.Shop:AddButton({
-Name = "Buy Katana", 
+Name = "Mua Katana", 
 Description = "",
 Callback = function()
   replicated.Remotes.CommF_:InvokeServer("BuyItem","Katana")
 end})
 Tabs.Shop:AddButton({
-Name = "Buy Iron Mace", 
+Name = "Mua Iron Mace", 
 Description = "",
 Callback = function()
   replicated.Remotes.CommF_:InvokeServer("BuyItem","Iron Mace")
 end})   
 Tabs.Shop:AddButton({
-Name = "Buy Duel Katana", 
+Name = "Mua Duel Katana", 
 Description = "",
 Callback = function()
   replicated.Remotes.CommF_:InvokeServer("BuyItem","Duel Katana")
 end})   
 Tabs.Shop:AddButton({
-Name = "Buy Triple Katana", 
+Name = "Mua Triple Katana", 
 Description = "",
 Callback = function()
   replicated.Remotes.CommF_:InvokeServer("BuyItem","Triple Katana")
 end})  
 Tabs.Shop:AddButton({
-Name = "Buy Pipe", 
+Name = "Mua Pipe", 
 Description = "",
 Callback = function()
   replicated.Remotes.CommF_:InvokeServer("BuyItem","Pipe")
 end})  
 Tabs.Shop:AddButton({
-Name = "Buy Dual-Headed Blade", 
+Name = "Mua Dual-Headed Blade", 
 Description = "",
 Callback = function()
   replicated.Remotes.CommF_:InvokeServer("BuyItem","Dual-Headed Blade")
 end})   
 Tabs.Shop:AddButton({
-Name = "Buy Bisento", 
+Name = "Mua Bisento", 
 Description = "",
 Callback = function()
   replicated.Remotes.CommF_:InvokeServer("BuyItem","Bisento")
 end})  
 Tabs.Shop:AddButton({
-Name = "Buy Soul Cane", 
+Name = "Mua Soul Cane", 
 Description = "",
 Callback = function()
   replicated.Remotes.CommF_:InvokeServer("BuyItem","Soul Cane")
 end})
 Tabs.Shop:AddButton({
-Name = "Buy Slingshot", 
+Name = "Mua Slingshot", 
 Description = "",
 Callback = function()
   replicated.Remotes.CommF_:InvokeServer("BuyItem","Slingshot")
 end})
 Tabs.Shop:AddButton({
-Name = "Buy Musket", 
+Name = "Mua Musket", 
 Description = "",
 Callback = function()
   replicated.Remotes.CommF_:InvokeServer("BuyItem","Musket")
 end})    
 Tabs.Shop:AddButton({
-Name = "Buy Dual Flintlock", 
+Name = "Mua Dual Flintlock", 
 Description = "",
 Callback = function()
   replicated.Remotes.CommF_:InvokeServer("BuyItem","Dual Flintlock")
 end})   
 Tabs.Shop:AddButton({
-Name = "Buy Flintlock", 
+Name = "Mua Flintlock", 
 Description = "",
 Callback = function()
   replicated.Remotes.CommF_:InvokeServer("BuyItem","Flintlock")
