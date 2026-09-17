@@ -4465,7 +4465,7 @@ spawn(function()
 end)
 
 DisableHitVFX = Tabs.Settings:AddToggle({
-    Name = "Remove Hit VFX",
+    Name = "Xóa VFX lần truy cập",
     Description = "Removes slash and sword visual effects for better visibility",
     Default = false,
     Callback = function(Value)
@@ -8553,7 +8553,7 @@ local ListSeaZone={"Lv 1","Lv 2","Lv 3","Lv 4","Lv 5","Lv 6","Lv Infinite"}
 
 
 Tabs.SeaEvent:AddButton({
-    Name = "Remove Lighting Effect",
+    Name = "Xóa hiệu ứng ánh sáng",
     Callback = function()
         game:GetService("Lighting").BaseAtmosphere:Destroy()
     end
@@ -11661,7 +11661,7 @@ Tabs.Shop:AddButton({
 
 Tabs.Misc:AddSection("Chức năng máy chủ")
 Tabs.Misc:AddButton({
-    Name = "Redeem All Codes",
+    Name = "Tự động nhập tất cả code",
     Description = "",
     Callback = function()
         local codes = {
@@ -11698,13 +11698,13 @@ Tabs.Misc:AddButton({
     end
 })
 Tabs.Misc:AddButton({
-Name = "Rejoin Server", 
+Name = "Vào lại máy chủ", 
 Description = "",
 Callback = function()
   game:GetService("TeleportService"):Teleport(game.PlaceId, game.Players.LocalPlayer)
 end})
 Tabs.Misc:AddButton({
-    Name = "Đổi server",
+    Name = "Đổi máy chủ",
     Description = "",
     Callback = function()
         task.spawn(function()
@@ -11737,7 +11737,7 @@ Tabs.Misc:AddButton({
     end
 })
 Tabs.Misc:AddButton({
-Name = "Đổi server ít người", 
+Name = "Đổi máy chủ ít người", 
 Description = "",
 Callback = function()
   local Http = game:GetService("HttpService")
@@ -11758,7 +11758,7 @@ Callback = function()
 end})
 
 Tabs.Misc:AddButton({
-Name = "Đổi server ping thấp", 
+Name = "Đổi máy chủ ping thấp", 
 Description = "",
 Callback = function()
 local HTTPService = game:GetService("HttpService")
@@ -11799,8 +11799,8 @@ end})
 local replicated = game:GetService("ReplicatedStorage")
 
 Tabs.Misc:AddTextBox({
-    Name = "Input Job Id",
-    Placeholder = "Job ID",
+    Name = "Nhập id",
+    Placeholder = "Id",
     ClearOnFocus = true,
     Callback = function(Value)
         getgenv().Job = Value
@@ -11821,7 +11821,7 @@ Tabs.Misc:AddButton({
     end
 })
 Tabs.Misc:AddButton({
-Name = "Copy JobID", 
+Name = "Sao chép id", 
 Description = "",
 Callback = function()
   setclipboard(tostring(game.JobId))
@@ -11830,13 +11830,13 @@ end})
 Tabs.Misc:AddSection("Giao diện / Khác")
 
 Tabs.Misc:AddButton({
-Name = "Open Awakenings Expert", 
+Name = "Mở khung thức tỉnh", 
 Description = "",
 Callback = function()
   plr.PlayerGui.Main.AwakeningToggler.Visible = true
 end})
 Tabs.Misc:AddButton({
-Name = "Mở chọn danh hiệu", 
+Name = "Mở khung danh hiệu", 
 Description = "",
 Callback = function()
   replicated.Remotes.CommF_:InvokeServer("getTitles",true)
@@ -11873,13 +11873,13 @@ Callback = function(Value)
 end
 })
 Tabs.Misc:AddButton({
-Name = "Set Pirate Team", 
+Name = "Chọn phe hải tặc", 
 Description = "",
 Callback = function()
   Pirates()
 end})  
 Tabs.Misc:AddButton({
-Name = "Set Marine Team", 
+Name = "Chọn phe hải quân", 
 Description = "",
 Callback = function()
   Marines()
@@ -12008,7 +12008,7 @@ Callback = function()
   end
 end})
 Tabs.Misc:AddButton({
-Name = "Xóa sương trời", 
+Name = "Xóa sương mù", 
 Description = "",
 Callback = function()
   if Lighting:FindFirstChild("LightingLayers") then Lighting.LightingLayers:Destroy() end
@@ -12036,7 +12036,7 @@ Callback = function()
   end
 end})
 briggt1 = Tabs.Misc:AddToggle({
-Name = "Bật Full Bright", 
+Name = "Bật sáng tất cả", 
 Description = "", 
 Default = false,
 Callback = function(Value)
@@ -12057,8 +12057,8 @@ end
 DayN = Tabs.Misc:AddDropdown({
 Name = "Chọn thời gian",
 Description = "",
-Options = {"Day", "Night"},
-Default = Day,
+Options = {"Ban ngày", "Ban đêm"},
+Default = nil,
 Callback = function(Value)
   _G.SelectDN = Value
 end})
