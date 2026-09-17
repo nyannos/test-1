@@ -10077,7 +10077,7 @@ Callback = function(Value)
   _G.AutoSelectDungeon = Value
 end})
 Tabs.Raids:AddToggle({
-    Name = "Get Fruit In Inventory Below 1M",
+    Name = "Lấy trái dưới 1M tiền từ kho",
     Default = false,
     Callback = function(Value)
         getgenv().AutoGetFruit = Value
