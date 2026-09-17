@@ -8135,7 +8135,7 @@ Callback = function()
 })
 
 Tabs.Prehistoric:AddButton({
-Name = "Craft Dragonstorm", 
+Name = "Tự động chế tạo Dragonstorm", 
 Description = "",
 Callback = function()
         local args = {
@@ -8652,7 +8652,7 @@ Callback = function()
 })
 
 Tabs.SeaEvent:AddButton({
-Name = "Craft TerrorJaw", 
+Name = "Tự động chế tạo TerrorJaw", 
 Description = "",
 Callback = function()
         local args = {
@@ -8691,7 +8691,7 @@ Callback = function()
 })
  
 Tabs.SeaEvent:AddButton({
-Name = "Craft LeviathanShield", 
+Name = "Tự động chế tạo LeviathanShield", 
 Description = "",
 Callback = function()
         local args = {
@@ -8717,7 +8717,7 @@ Callback = function()
 })
 
 Tabs.SeaEvent:AddButton({
-Name = "Craft LegendaryScroll", 
+Name = "Tự động chế tạo LegendaryScroll", 
 Description = "",
 Callback = function()
         local args = {
@@ -11808,7 +11808,7 @@ Tabs.Misc:AddTextBox({
 })
 
 Tabs.Misc:AddButton({
-    Name = "Teleport [Job ID]", 
+    Name = "Đi đến điểm đã nhập bằng Id", 
     Callback = function()
         if getgenv().Job and getgenv().Job ~= "" then
             game:GetService("TeleportService")
