@@ -7733,14 +7733,14 @@ end)
 
 Tabs.Prehistoric:AddSection("Nhiệm vụ Dojo")
 Tabs.Prehistoric:AddButton({
-    Title = "Teleport To Dragon Dojo",
+    Title = "Dịch chuyển Dragon Dojo",
     Callback = function()
         game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("requestEntrance", Vector3.new(5661.5322265625, 1013.0907592773438, - 334.9649963378906))
         topos(CFrame.new(5814.42724609375, 1208.3267822265625, 884.5785522460938))
     end
 })
 DojoQ = Tabs.Prehistoric:AddToggle({
-Name = "Tự Dojo Trainer", 
+Name = "Tự động Dojo Trainer", 
 Description = "", 
 Default = false,
 Callback = function(Value)
@@ -7829,7 +7829,7 @@ spawn(function()
   end
 end)
 BlazeEM = Tabs.Prehistoric:AddToggle({
-Name = "Tự Dragon Hunter", 
+Name = "Tự động Dragon Hunter", 
 Description = "", 
 Default = false,
 Callback = function(Value)
@@ -7925,7 +7925,7 @@ spawn(function()
   end
 end)
 Toggle = Tabs.Prehistoric:AddToggle({
-Name = "Tự Drago (V1)", 
+Name = "Tự động nâng Drago (V1)", 
 Description = "", 
 Default = false,
 Callback = function(Value)
@@ -7950,7 +7950,7 @@ spawn(function()
   end
 end)
 fireflower = Tabs.Prehistoric:AddToggle({
-Name = "Tự Drago (V2)", 
+Name = "Tự động nâng Drago (V2)", 
 Description = "", 
 Default = false,
 Callback = function(Value)
@@ -7982,7 +7982,7 @@ spawn(function()
   end
 end)
 Toggle = Tabs.Prehistoric:AddToggle({
-Name = "Tự Drago (V3)", 
+Name = "Tự động nâng Drago (V3)", 
 Description = "", 
 Default = false,
 Callback = function(Value)
@@ -8078,7 +8078,7 @@ spawn(function()
   end
 end)
 bdrago = Tabs.Prehistoric:AddToggle({
-Name = "Swap Drago Race", 
+Name = "Cuộc đua Drago hoán đổi", 
 Description = "", 
 Default = false,
 Callback = function(Value)
@@ -8100,7 +8100,7 @@ spawn(function()
   end
 end)
 UpTalon = Tabs.Prehistoric:AddToggle({
-Name = "Upgrade Dragon Talon With Uzoth", 
+Name = "Nâng cấp long trảo", 
 Description = "", 
 Default = false,
 Callback = function(Value)
@@ -8122,7 +8122,7 @@ end)
 Tabs.Prehistoric:AddSection("Chế tạo núi lửa")
 
 Tabs.Prehistoric:AddButton({
-Name = "Craft Dragonheart", 
+Name = "Tự động chế tạo Dragonheart", 
 Description = "",
 Callback = function()
         local args = {
@@ -8148,7 +8148,7 @@ Callback = function()
 })
 
 Tabs.Prehistoric:AddButton({
-    Name = "Craft Dino Hood",
+    Name = "Tự động chế tạo Dino Hood",
     Callback = function()
         local args = {
             [1] = "CraftItem",
@@ -8160,7 +8160,7 @@ Tabs.Prehistoric:AddButton({
 })
 
 Tabs.Prehistoric:AddButton({
-    Name = "Craft T-Rex Skull",
+    Name = "Tự động chế tạo T-Rex Skull",
     Callback = function()
         local args = {
             [1] = "CraftItem",
@@ -8185,7 +8185,7 @@ spawn(function()
 end)
 
 Tabs.Prehistoric:AddButton({
-    Name = "Craft Volcanic Magnet",
+    Name = "Tự động chế tạo Volcanic Magnet",
     Callback = function()
         local RF = game:GetService("ReplicatedStorage").Modules.Net["RF/Craft"]
 
@@ -8197,7 +8197,7 @@ Tabs.Prehistoric:AddButton({
 })
 
 Tabs.Prehistoric:AddToggle({
-    Name = "Craft Volcanic Magnet",
+    Name = "Tự động chế tạo Volcanic Magnet",
     Default = false,
     Callback = function(Value)
         getgenv().AutoCraftVolcanic = Value
@@ -8450,7 +8450,7 @@ spawn(function()
 end)
 
 Kaura = Tabs.Prehistoric:AddToggle({
-    Name = "Aura giết",
+    Name = "Đánh quái trên đảo",
     Description = "",
     Default = false,
     Callback = function(Value)
@@ -8486,7 +8486,7 @@ spawn(function()
     end
 end)
 Vocan = Tabs.Prehistoric:AddToggle({
-Name = "Tự nhặt xương khủng long", 
+Name = "Tự động nhặt xương khủng long", 
 Description = "", 
 Default = false,
 Callback = function(Value)
@@ -8506,7 +8506,7 @@ spawn(function()
   end
 end)
 Vocan = Tabs.Prehistoric:AddToggle({
-Name = "Tự nhặt trứng rồng", 
+Name = "Tự động nhặt trứng rồng", 
 Description = "", 
 Default = false,
 Callback = function(Value)
@@ -8560,7 +8560,7 @@ Tabs.SeaEvent:AddButton({
 })
 
 Tabs.SeaEvent:AddToggle({
-    Name = "Ship Speed Modifier",
+    Name = "Bộ điều chỉnh tốc độ tàu",
     Default = false,
     Callback = function(Value)
         getgenv().SpeedBoat = Value
@@ -8582,7 +8582,7 @@ game:GetService("RunService").RenderStepped:Connect(function()
     end
 end)
 Tabs.SeaEvent:AddSlider({
-    Name = "Ship Speed",
+    Name = "Tốc độ thuyền",
     Min = 0,
     Max = 1000,
     Increment = 1,
@@ -8611,7 +8611,7 @@ spawn(function()
     end
 end)
 Tabs.SeaEvent:AddToggle({
-    Name = "No Clip Ship",
+    Name = "Thuyền đi xuyên tường",
     Default = false,
     Callback = function(Value)
         getgenv().NoClipShip = Value
@@ -8639,7 +8639,7 @@ Tabs.SeaEvent:AddSection("Chế tạo vật phẩm")
 
 
 Tabs.SeaEvent:AddButton({
-Name = "Craft SharkTooth", 
+Name = "Tự động chế tạo SharkTooth", 
 Description = "",
 Callback = function()
         local args = {
@@ -8665,7 +8665,7 @@ Callback = function()
 })
 
 Tabs.SeaEvent:AddButton({
-Name = "Craft SharkAnchor", 
+Name = "Tự động chế tạo SharkAnchor", 
 Description = "",
 Callback = function()
         local args = {
@@ -8678,7 +8678,7 @@ Callback = function()
 })
 
 Tabs.SeaEvent:AddButton({
-Name = "Craft LeviathanCrown", 
+Name = "Tự động chế tạo LeviathanCrown", 
 Description = "",
 Callback = function()
         local args = {
@@ -8704,7 +8704,7 @@ Callback = function()
 })
 
 Tabs.SeaEvent:AddButton({
-Name = "Craft LeviathanBoat", 
+Name = "Tự động chế tạo LeviathanBoat", 
 Description = "",
 Callback = function()
         local args = {
@@ -8730,7 +8730,7 @@ Callback = function()
 })
 
 Tabs.SeaEvent:AddButton({
-Name = "Craft MythicalScroll", 
+Name = "Tự động chế tạo MythicalScroll", 
 Description = "",
 Callback = function()
         local args = {
@@ -8757,7 +8757,7 @@ Callback = function()
   replicated.Remotes.CommF_:InvokeServer("BuyBoat",_G.SelectedBoat)
 end})
 Q = Tabs.SeaEvent:AddDropdown({
-Name = "Chọn cấp biển",
+Name = "Chọn mức độ nguy hiểm",
 Options = ListSeaZone,
 Callback = function(Value)
   _G.DangerSc = Value
