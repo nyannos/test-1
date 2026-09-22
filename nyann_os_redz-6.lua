@@ -1727,7 +1727,7 @@ print("[nyann os] UiRedzV5 (daucobonhi) ready")
 
 local Tabs = {
 	Info = Window:MakeTab({ Title = "Info And Status", Icon = "info" }),
-	Main = Window:MakeTab({ Title = "Main", Icon = "home" }),
+	Main = Window:MakeTab({ Title = "Main", Icon = "box" }),
 	Font = Window:MakeTab({ Title = "Font", Icon = "type" }),
 	Settings = Window:MakeTab({ Title = "Setting", Icon = "settings" }),
 	Fish = Window:MakeTab({ Title = "Fishing", Icon = "droplet" }),
@@ -1740,7 +1740,7 @@ local Tabs = {
 	Combat = Window:MakeTab({ Title = "Local Player", Icon = "user" }),
 	Travel = Window:MakeTab({ Title = "Teleport", Icon = "map" }),
 	Shop = Window:MakeTab({ Title = "Shop", Icon = "shoppingcart" }),
-	Misc = Window:MakeTab({ Title = "Miscellaneous", Icon = "box" }),
+	Misc = Window:MakeTab({ Title = "Miscellaneous", Icon = "settings-2" }),
 }
 
 
