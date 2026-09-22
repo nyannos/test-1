@@ -1366,7 +1366,7 @@ local Options = {}
 local Toggles = {}
 
 local RealWindow = redzlib:MakeWindow({
-	Title = "nyann os [Beta] Fram no key",
+	Title = "                  nyann os [Beta] No Key",
 	SubTitle = "by real_@nyannnokonoko",
 	SaveFolder = "Blox Fruits.lua",
 })
@@ -1604,7 +1604,7 @@ local Tabs = {
 	Main = Window:MakeTab({ Title = "Main", Icon = "box" }),
 	Font = Window:MakeTab({ Title = "Font", Icon = "type" }),
 	Settings = Window:MakeTab({ Title = "Setting", Icon = "settings" }),
-	Fish = Window:MakeTab({ Title = "Fishing", Icon = "rbxassetid://8826268749"}),
+	Fish = Window:MakeTab({ Title = "Fishing", Icon = "droplet"}),
 	Quests = Window:MakeTab({ Title = "Quest And Item", Icon = "scroll" }),
 	SeaEvent = Window:MakeTab({ Title = "Sea Event", Icon = "waves" }),
 	Race = Window:MakeTab({ Title = "Mirage And Race", Icon = "moon" }),
