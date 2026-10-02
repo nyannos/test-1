@@ -1361,11 +1361,11 @@ end
 -- REDZ LIBRARY V5 (id202azh) - transparent fix build
 -- ============================================================
 local redzlib = loadstring(game:HttpGet(
-	"https://raw.githubusercontent.com/id202azh/id_905/refs/heads/main/raw%20(1).txt"
+	"https://raw.githubusercontent.com/tlredz/Library/refs/heads/main/redz-V5-remake/main.luau"
 ))()
 
 local RealWindow = redzlib:MakeWindow({
-	Title = "nyann os",
+	Title = "RF hub",
 	SubTitle = "by real_@nyannnokonoko",
 	SaveFolder = "NyannOS_BF.lua",
 })
@@ -1385,7 +1385,7 @@ do
 		if RealWindow.AddMinimizeButton then
 			RealWindow:AddMinimizeButton({
 				Button = {
-					Image = "rbxassetid://94678517792779",
+					Image = "rbxassetid://86224472741926",
 					BackgroundTransparency = 0,
 				},
 				Corner = {
@@ -1400,7 +1400,7 @@ do
 	if not added and Minimizer then
 		pcall(function()
 			Minimizer:CreateMobileMinimizer({
-				Image = "rbxassetid://94678517792779",
+				Image = "rbxassetid://86224472741926",
 				BackgroundTransparency = 0,
 				BackgroundColor3 = Color3.fromRGB(20, 20, 20),
 				Size = UDim2.fromOffset(48, 48),
@@ -1430,7 +1430,7 @@ do
 			btn.Size = UDim2.fromOffset(48, 48)
 			btn.Position = UDim2.fromScale(0.15, 0.25)
 			btn.AnchorPoint = Vector2.new(0.5, 0.5)
-			btn.Image = "rbxassetid://94678517792779"
+			btn.Image = "rbxassetid://86224472741926"
 			btn.BackgroundTransparency = 0
 			btn.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
 			btn.AutoButtonColor = false
@@ -1648,11 +1648,11 @@ print("[nyann os] Redz V5 (id202azh) ready")
 local Tabs = {
 	Info = Window:MakeTab({ Title = "Information", Icon = "info" }),
 	Main = Window:MakeTab({ Title = "Main", Icon = "home" }),
-	Fish = Window:MakeTab({ Title = "Fishing", Icon = "rbxassetid://8826268749" }),
+	Settings = Window:MakeTab({ Title = "Setting", Icon = "settings-2" }),
+	Fish = Window:MakeTab({ Title = "Fishing", Icon = "fish" }),
 	Race = Window:MakeTab({ Title = "Race V4", Icon = "moon" }),
 	SeaEvent = Window:MakeTab({ Title = "Sea Event", Icon = "waves" }),
-	Raids = Window:MakeTab({ Title = "Fruit And Raid", Icon = "swords" }),
-	Settings = Window:MakeTab({ Title = "Setting", Icon = "settings" }),
+	Raids = Window:MakeTab({ Title = "Fruit And Raid", Icon = "cherry" }),
 }
 
 local function _dummyTab()
@@ -1681,7 +1681,6 @@ print("[nyann os] Menu: Info + Main + Fish + RaceV4 + SeaEvent + Fruit/Raid")
 Tabs.Info:AddSection("Information")
 
 Tabs.Info:AddParagraph("Hub", "nyann os  |  by real_@nyannnokonoko")
-Tabs.Info:AddParagraph("Version", "Slim Redz  |  Farm Level / Bone / Cake")
 
 Tabs.Info:AddDiscordInvite({
 	Title = "Nyann | Community",
